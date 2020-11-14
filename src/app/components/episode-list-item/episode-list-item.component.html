@@ -1,0 +1,13 @@
+<ion-item>
+  <ion-text slot="start">
+    <h1>{{ episode?.number }}</h1>
+  </ion-text>
+  <ion-label class="ion-text-wrap">
+    <h4>{{ episode?.title }}</h4>
+    <p>{{episode?.date}} • {{episode?.hour}} min</p>
+  </ion-label>
+  
+  <ion-button class="circle-button ion-no-padding" fill="clear" shape="round" color="default" slot="end">
+    <i class="icon-more-vertical"></i>
+  </ion-button> 
+</ion-item>

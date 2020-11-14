@@ -1,0 +1,21 @@
+ion-segment-button {
+	--color: var(--ion-color-secondary);
+	font-size: 12pt;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
+.segment-button-checked .segment-button-indicator {
+	width: 3rem !important;
+	border-bottom-left-radius: 6pt !important;
+	border-bottom-right-radius: 6pt !important;
+	align-self: flex-start !important;
+}
+
+ion-row {
+	margin-top: .5rem;
+}
+
+.padding-button {
+	padding-bottom: 50px !important;
+}

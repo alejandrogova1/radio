@@ -1,0 +1,24 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-title>Notifications</ion-title>
+		<ion-buttons slot="end">
+			<ion-button
+				class="circle-button ion-no-padding"
+				fill="clear"
+				shape="round"
+				color="default"
+				(click)="closeModal()"
+			>
+				<i class="icon-x"></i>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<app-notification-item
+		title="Next weekend Summer Special Marathon"
+		text="Enjoy all the UK and Europe Summer Hits in one single non stop show this saturday at 10:00 AM"
+	>
+	</app-notification-item>
+</ion-content>

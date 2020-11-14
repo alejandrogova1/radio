@@ -1,0 +1,23 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-title>Estaciones de Radio</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	
+	<div class="list-container">
+		<div *ngFor="let item of [1,2,3,4,5]; let i = index">
+			<div class="animate-in" [ngStyle]="{'animation-delay.s': i * 0.100}">
+				<app-favorite-item 
+					[picture]="'https://images.unsplash.com/photo-1553907565-17a93ff8d368?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80'"
+					[host]="'DJ Khalek'" [name]="'Non Stop Radio Ep. 04'" [episodes]="25">
+				</app-favorite-item>
+			</div>
+			
+		</div>
+	</div>
+	
+</ion-content>
+
+<app-mini-player></app-mini-player>

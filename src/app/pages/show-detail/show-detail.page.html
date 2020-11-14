@@ -1,0 +1,27 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="Regresar" defaultHref="/"> </ion-back-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="absolute ion-no-padding">
+	<div
+		class="image-container"
+		[ngStyle]="{'background-image': 'url('+ item?.image +')'}"
+	></div>
+	<ng-template #loadingTemplate>
+		<div class="image-container">
+			<div class="loader"></div>
+		</div>
+	</ng-template>
+	<div class="bg-dark card-img-overlay"></div>
+	<div class="container">
+		<ion-text color="primary">
+			<h4>Descripción</h4>
+		</ion-text>
+		<p>{{ item?.description }}</p>
+		<ion-button color="primary" (click)="startAudio( item )">Reproducir</ion-button>
+	</div>
+</ion-content>

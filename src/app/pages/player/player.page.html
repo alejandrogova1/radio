@@ -1,0 +1,48 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-buttons slot="start" class="chevron">
+			<ion-button
+				class=" circle-button ion-no-padding"
+				fill="clear"
+				shape="round"
+				color="default"
+				(click)="closeModal()"
+			>
+				<i class="icon-chevron-down"></i>
+			</ion-button>
+		</ion-buttons>
+		<ion-title> Reproduciendo </ion-title>
+	</ion-toolbar>
+</ion-header>
+<ion-content class="ion-text-center">
+	<div class="h-100  vertical-align">
+		<div
+			class="image-container"
+			[ngStyle]="{'background-image': 'url('+ data?.photo +')'}"
+		></div>
+		<div class="py">
+			<h4>{{ data?.title }}</h4>
+			<p>{{ data?.text }}</p>
+		</div>
+		<ion-buttons>
+
+			<ion-button class="play-button" *ngIf="!buttonPlay" (click)="play()"></ion-button> 
+			<ion-button class="stop-button" *ngIf="buttonPlay" (click)="stop()"></ion-button>
+			
+		</ion-buttons>
+		<ion-range
+			min="0"
+			max="100"
+			color="secondary"
+			[value]="valueVolume"
+			(ionChange)="volumen($event)"
+		>
+			<ion-label slot="start">
+				<i class="icon-volume-1"></i>
+			</ion-label>
+			<ion-label slot="end">
+				<i class="icon-volume-2"></i>
+			</ion-label>
+		</ion-range>
+	</div>
+</ion-content>

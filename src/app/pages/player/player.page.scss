@@ -1,0 +1,155 @@
+ion-range {
+	--bar-height: 4px;
+	--bar-border-radius: 2px;
+	--height: 4rem;
+}
+
+i {
+	color: #000;
+	font-weight: normal;
+}
+
+.image-container {
+	background-size: 30%;
+	min-height: 20rem;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	margin: 1rem;
+}
+
+h4 {
+	color: #000;
+	margin: 0.4rem auto;
+}
+
+p {
+	color: rgba(0, 0, 0, 0.6);
+	margin: 0 !important;
+}
+
+ion-button > i {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 18pt;
+	margin: auto 1rem;
+}
+
+ion-buttons {
+	display: inline !important;
+	padding-top: 2rem;
+}
+
+.vertical-align {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem auto;
+	justify-content: space-around;
+}
+
+.media-button {
+	width: 5rem;
+	height: 5rem;
+	margin: auto .5rem;
+}
+
+.play-button {
+	--background: url(../../../assets/play.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60px;
+	height: 60px;
+}
+
+.stop-button {
+	--background: url(../../../assets/pause.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60px;
+	height: 60px;
+}
+
+.chevron {
+	padding-top: 0 !important;
+}
+
+@media (min-device-height: 568px) and (max-device-height: 640px),
+	handheld and (orientation: portrait) {
+	ion-buttons {
+		padding-top: 1rem;
+	}
+
+	h4 {
+		font-size: 12pt;
+	}
+	p {
+		font-size: 10pt;
+	}
+
+	.py {
+		padding: 0.5rem;
+	}
+
+	.image-container {
+		min-height: 14rem;
+	}
+}
+
+@media (min-device-height: 667px), handheld and (orientation: portrait) {
+	ion-buttons {
+		padding-top: 2rem;
+	}
+
+	.image-container {
+		min-height: 16rem;
+	}
+
+	h4 {
+		font-size: 15pt;
+	}
+
+	p {
+		font-size: 12pt;
+	}
+
+	.py {
+		padding: 1rem 0;
+	}
+}
+
+@media (min-device-height: 736px), handheld and (orientation: portrait) {
+	ion-buttons {
+		padding-top: 2rem;
+	}
+
+	.image-container {
+		min-height: 20rem;
+	}
+
+	h4 {
+		font-size: 15pt;
+	}
+
+	p {
+		font-size: 12pt;
+	}
+
+	.py {
+		padding: 1rem 0;
+	}
+}
+
+@media (min-device-height: 1024px), handheld and (orientation: portrait) {
+	ion-buttons {
+		padding-top: 1rem;
+	}
+	.py {
+		padding: 0;
+	}
+	ion-content {
+		margin: 2rem;
+  }
+  
+  .image-container {
+    min-height: 15rem;
+    min-width: 16rem;
+	}
+}

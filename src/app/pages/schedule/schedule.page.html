@@ -1,0 +1,35 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-title>
+			Emisoras
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div [ngSwitch]="valueType" class="padding-button">
+		<ion-grid class="ion-no-padding">
+			<div *ngSwitchCase="'monday'" class="fade-in">
+				<ion-row>
+					<ion-col size="6" *ngFor="let item of shows">
+						<app-big-card 	[routerLink]="'/show/' + item.id" class="ion-text-left"
+										[photo]="item.image"
+										 >
+						</app-big-card>
+					</ion-col>
+				</ion-row>
+			</div>
+			<div *ngSwitchCase="'tuesday'" class="fade-in">
+				<ion-row>
+					<ion-col size="6" *ngFor="let item of shows">
+						<app-big-card 	[routerLink]="'/show/' + item.id" class="ion-text-left"
+										[photo]="item.image"
+										 >
+						</app-big-card>
+					</ion-col>
+				</ion-row>
+			</div>
+		</ion-grid>
+	</div>
+</ion-content>
+<app-mini-player></app-mini-player>

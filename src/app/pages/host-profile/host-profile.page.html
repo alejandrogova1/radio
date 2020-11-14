@@ -1,0 +1,26 @@
+<div class="ion-text-center vertical-align">
+	<div class="inside">
+		<ion-avatar>
+			<img [src]="host?.avatar" />
+		</ion-avatar>
+		<h4>{{ host?.name }}</h4>
+		<p>
+			{{ host?.bio }}
+		</p>
+		<ion-buttons>
+			<ion-button *ngFor="let social of host?.social"
+				class="circle-button ion-no-padding"
+				fill="clear"
+				shape="round"
+				color="default"
+			>
+			<ng-container [ngSwitch]="social.type">
+				<i *ngSwitchCase="'linkedin'" class="icon-linkedin"></i>
+				<i *ngSwitchCase="'twitter'" class="icon-twitter"></i>
+				<i *ngSwitchDefault class="icon-link"></i>
+			</ng-container>
+				
+			</ion-button>	
+		</ion-buttons>
+	</div>
+</div>

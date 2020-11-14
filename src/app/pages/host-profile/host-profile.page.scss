@@ -1,0 +1,51 @@
+.vertical-align {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.inside {
+    margin: auto;
+
+    ion-buttons {
+        display: inline !important;
+    }
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 12pt;
+    color: rgba(221, 221, 221, 1);
+}
+
+p {
+    font-size: 11pt;
+    color: rgba(221, 221, 221, .8);
+    margin: 2rem 0;
+}
+
+
+ion-button>i {
+    color: rgba(221, 221, 221, 0.8);
+    font-size: 18pt;
+    padding: .5rem;
+}
+
+
+
+ion-avatar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-device-height: 568px) and (max-device-height: 640px),
+handheld and (orientation: portrait) {
+    p {
+        margin: .5rem 0 !important;
+    }
+
+    .inside {
+        margin: none !important;
+    }
+}

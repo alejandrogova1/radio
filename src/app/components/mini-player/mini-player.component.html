@@ -1,0 +1,29 @@
+<div class="mini-player">
+	<ion-item lines="none">
+		<ion-button class="circle-button ion-no-padding ion-no-margin" slot="start" fill="clear" shape="round"
+			color="default" (click)="presentModal({
+					hour: '2PM - 3PM',
+					photo: 'https://www.imer.mx/wp-content/uploads/sites/36/Reactor-1.jpg',
+					title: 'Reactor',
+					text: 'Desde la ciudad de México'
+				})">
+			<i class="icon-chevron-up"></i>
+		</ion-button>
+		<ion-avatar slot="start">
+			<img
+				src="{{ photo }}">
+		</ion-avatar>
+		<ion-label class="ion-text-wrap">
+			<p>Reproduciendo</p>
+			<h4>Reactor</h4>
+		</ion-label>
+		<ion-button class="circle-button ion-no-padding ion-no-margin" fill="clear" shape="round" color="default"
+			(click)="toggleIconPlay()" *ngIf="flagPlay">
+			<i class="icon-play"></i>
+		</ion-button>
+		<ion-button class="circle-button ion-no-padding ion-no-margin" fill="clear" shape="round" color="default"
+			(click)="toggleIconPlay()" *ngIf="!flagPlay">
+			<i class="icon-pause"></i>
+		</ion-button>
+	</ion-item>
+</div>

@@ -1,0 +1,38 @@
+.mini-player {
+    background-color: #057F71;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 100;
+
+    ion-item {
+        --background: #057F71;
+    }
+
+    i {
+        color: #ffffff;
+    }
+}
+
+.ion-text-wrap {
+    p {
+        color: var(--ion-color-primary);
+    }
+
+    h4 {
+        color: #ffffff;
+        font-size: 14pt;
+    }
+}
+
+ion-avatar {
+    --border-radius: 4pt;
+    margin-left: .5rem;
+}
+
+@media (min-device-height: 568px) and (max-device-height: 640px),
+handheld and (orientation: portrait) {
+    h4 {
+        font-size: 12pt !important;
+    }
+}

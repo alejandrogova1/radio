@@ -1,0 +1,19 @@
+span {
+    font-weight: 500;
+    font-size: 11pt;
+    color: #fff;
+}
+
+ion-card {
+    box-shadow: none !important;   
+}
+
+ion-card-header {
+    padding-bottom: 0;
+}
+
+ion-thumbnail {
+    --border-radius: 50%;
+    --size: 4rem;
+    margin: auto auto .2rem auto;
+}

@@ -1,0 +1,33 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-title>
+			IMER
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-text color="primary">
+		<h4>Bienvenidos</h4>
+	</ion-text>
+
+	<ion-card class="item-card shadow-sm">
+		<img class="card-img " src="https://image.freepik.com/foto-gratis/chica-guapa-pelo-largo-rizado-cola-sobre-fondo-azul-estudio-viste-camiseta-blanca-pantalones-cortos-escucha-musica-auriculares-azules_197531-869.jpg">
+	</ion-card>
+
+	<ion-text color="primary">
+		<h4>Emisoras</h4>
+	</ion-text>
+
+	<ion-slides [options]="upcomingConf" >
+		<ion-slide *ngFor="let item of shows;">
+			<app-big-card
+				[routerLink]="'/show/' + item.id"
+				class="ion-text-left"
+				[photo]="item.image"
+			>
+			</app-big-card>
+		</ion-slide>
+	</ion-slides>
+</ion-content>
+<app-mini-player></app-mini-player>

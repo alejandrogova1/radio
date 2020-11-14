@@ -1,0 +1,94 @@
+ion-back-button {
+	--color: #ffffff;
+}
+ion-toolbar {
+	--background: transparent !important;
+}
+.absolute {
+	position: absolute;
+	top: 0;
+}
+
+.container {
+	padding: 0.5rem 1rem;
+
+	p {
+		color: rgba(0, 0, 0, 0.8);
+		font-weight: normal;
+		font-size: 12pt;
+	}
+}
+
+.card-img-overlay {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1.25rem;
+	color: #000000;
+	h4,
+	p {
+		margin: 0 !important;
+	}
+}
+
+.image-container {
+	background-size: contain;
+	min-height: 10rem;
+}
+
+.bg-dark {
+	width: 100%;
+	padding: 1rem 1rem 1.5rem 1rem;
+	color: #fff;
+	background: rgb(2, 19, 42);
+	background: -moz-linear-gradient(
+		180deg,
+		rgba(2, 19, 42, 0) 0%,
+		rgb(32, 32, 32, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		180deg,
+		rgba(2, 19, 42, 0) 0%,
+		rgb(32, 32, 32, 1) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(2, 19, 42, 0) 0%,
+		rgb(32, 32, 32, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02132a",endColorstr="#02132a",GradientType=1);
+	position: absolute;
+	top: 7.5rem;
+	height: fit-content;
+}
+
+.loader {
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+ @media (min-device-height: 568px), handheld and (orientation: portrait) {
+	.container p {
+		font-size: 10pt;
+	}
+}
+
+@media (min-device-height: 640px), handheld and (orientation: portrait) {
+	.container p {
+		font-size: 12pt;
+	}
+}

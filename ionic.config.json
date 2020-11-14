@@ -1,0 +1,7 @@
+{
+  "name": "ionic-radio",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
